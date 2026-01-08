@@ -112,6 +112,7 @@ function Section({ title, children }: SectionProps) {
 }
 
 function ImagePlaceholder({ caption, figureNumber, imageUrl, captionText }: { caption: string; figureNumber?: number; imageUrl?: string; captionText?: string }) {
+  const hasCaptionText = captionText !== undefined && captionText.trim() !== '';
   return (
     <div className="my-12">
       {figureNumber && (
@@ -128,9 +129,17 @@ function ImagePlaceholder({ caption, figureNumber, imageUrl, captionText }: { ca
           </p>
         )}
       </div>
-      <p className="text-[#a9b1b7] text-xs mt-2 italic" style={{ fontFamily: 'Antic, sans-serif' }}>
-        {captionText || 'CAPTION NEEDED'}
-      </p>
+      {captionText === undefined ? (
+        <p className="text-[#a9b1b7] text-xs mt-2 italic" style={{ fontFamily: 'Antic, sans-serif' }}>
+          CAPTION NEEDED
+        </p>
+      ) : (
+        hasCaptionText && (
+          <p className="text-[#a9b1b7] text-xs mt-2 italic" style={{ fontFamily: 'Antic, sans-serif' }}>
+            {captionText}
+          </p>
+        )
+      )}
     </div>
   );
 }
@@ -847,6 +856,7 @@ function BrandTab() {
           caption="Dravix name origin"
           figureNumber={21}
           imageUrl="https://i.imgur.com/DV4lDmR.png"
+          captionText=""
         />
       </Section>
 
