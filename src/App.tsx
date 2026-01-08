@@ -843,6 +843,11 @@ function BrandTab() {
             The name Dravix combines <span className="italic">dravya</span>, a Sanskrit term meaning substance or material, with the suffix <span className="italic">-ix</span>, commonly associated with technology and innovation. The name reflects the platform's focus on understanding materials at a fundamental level while applying modern computational tools to improve how they are evaluated.
           </p>
         </div>
+        <ImagePlaceholder
+          caption="Dravix name origin"
+          figureNumber={21}
+          imageUrl="https://i.imgur.com/DV4lDmR.png"
+        />
       </Section>
 
       <Section title="Brand Personality">
@@ -936,7 +941,7 @@ function RoadmapTab() {
         </div>
         <ImagePlaceholder
           caption="Phase-3 Pilot Validation Timeline"
-          figureNumber={21}
+          figureNumber={22}
           imageUrl="https://i.imgur.com/eY8aKKY.png"
           captionText="Phase 3 emphasizes controlled pilot validation through limited deployment, targeted dataset expansion, and iterative refinement informed by real-world feedback, prioritizing confidence building and system clarity prior to broader workflow integration."
         />
@@ -956,7 +961,7 @@ function RoadmapTab() {
         </div>
         <ImagePlaceholder
           caption="Validation-to-Workflow Integration Pathway"
-          figureNumber={22}
+          figureNumber={23}
           imageUrl="https://i.imgur.com/l3lmzfv.png"
           captionText="Progression from system validation through controlled pilot use to integration as an upstream screening step within material development workflows, while preserving existing physical fire testing and certification pathways."
         />
@@ -976,7 +981,7 @@ function RoadmapTab() {
         </div>
         <ImagePlaceholder
           caption="Multi-Property Screening Expansion Framework"
-          figureNumber={23}
+          figureNumber={24}
           imageUrl="https://i.imgur.com/n3MIUQp.png"
           captionText="Incremental expansion framework illustrating how additional material property screening domains are introduced only after validation criteria comparable to those established for fire resistance are satisfied."
         />
